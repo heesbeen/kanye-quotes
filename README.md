@@ -18,7 +18,6 @@ Checkout example requests .http folder
 ## Installation
 
 ```
-mkdir -p packages/Heesbeen/KanyeQuotes
 git clone git@github.com:heesbeen/kanye-quotes.git packages/Heesbeen/KanyeQuotes
 ```
 
