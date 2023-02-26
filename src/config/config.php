@@ -1,6 +1,8 @@
 <?php
 
 return [
-    'kanye_west_api_url' => 'https://raw.githubusercontent.com/ajzbc/kanye.rest/master/quotes.json',
-    'kanye_west_api_use_cache' => true
+    'api_url' => 'https://api.kanye.rest/',
+    'api_list_url' => 'https://raw.githubusercontent.com/ajzbc/kanye.rest/master/quotes.json',
+    'use_list_api' => true,
+    'use_cache' => true
 ];

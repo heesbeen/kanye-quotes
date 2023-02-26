@@ -19,8 +19,7 @@ Checkout example requests .http folder
 
 ```
 mkdir -p packages/Heesbeen/KanyeQuotes
-cd packages/Heesbeen/KanyeQuotes
-git clone git@github.com:heesbeen/kanye-quotes.git
+git clone git@github.com:heesbeen/kanye-quotes.git packages/Heesbeen/KanyeQuotes
 ```
 
 Add repository
@@ -36,6 +35,20 @@ Add repository
 
 ```
 composer require heesbeen/kany-quotes
+```
+
+### Configurations
+
+You choose to use the single quote api or the bulk api. 
+
+The bulk api options is 10 times faster and has a caching option.
+Persistent cache is used as a fallback when the api is not available
+
+```
+'api_url' => 'https://api.kanye.rest/',
+'api_list_url' => 'https://raw.githubusercontent.com/ajzbc/kanye.rest/master/quotes.json',
+'use_list_api' => true,
+'use_cache' => true
 ```
 
 ### Tips & tricks (optional)
@@ -61,9 +74,4 @@ npm run dev
 ```
 
 The response is your bearer token
-
-### Optional roadmap
-
-Quotes model
-Console import task
 
