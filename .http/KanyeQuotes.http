@@ -1,0 +1,24 @@
+GET http://{{host}}/api/kanye-quotes
+Accept: application/json
+Authorization: Bearer {{token}}
+
+> {%
+    client.test("Success!", function() {
+        client.assert(response.status === 200, "Response status is not 200");
+    });
+
+    client.test("5 items", function() {
+        client.assert(response.body.length == 5, "More or less then 5 items");
+    });
+%}
+
+###
+
+GET http://{{host}}/api/kanye-quotes
+Accept: application/json
+
+> {%
+    client.test("Success!", function() {
+        client.assert(response.status === 401, "Response status is not 401");
+    });
+%}

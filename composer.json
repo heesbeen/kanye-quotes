@@ -1,0 +1,32 @@
+{
+    "name" : "heesbeen/kanye-quotes",
+    "description": "Laravel package that adds a secure page with Kanye West quotes",
+    "version": "0.0.1",
+    "autoload": {
+        "psr-4": {
+            "Heesbeen\\KanyeQuotes\\": "src/",
+            "Heesbeen\\KanyeQuotes\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Heesbeen\\KanyeQuotes\\KanyeQuotesServiceProvider"
+            ]
+        }
+    },
+    "authors": [
+        {
+            "name": "Derrick Heesbeen",
+            "email": "derrick@heesbeen.nu"
+        }
+    ],
+    "require": {},
+    "require-dev": {
+        "phpunit/phpunit": "^10.0",
+        "orchestra/testbench": "^8.0"
+    },
+    "suggest": {
+        "laravel/ui" : "Generate ui components for laravel user login. A valid user session is needed to view Kanye quotes. Check readme for instructions"
+    }
+}
