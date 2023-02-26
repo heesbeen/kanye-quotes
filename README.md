@@ -33,7 +33,7 @@ Add repository
 ```
 
 ```
-composer require heesbeen/kany-quotes
+composer require heesbeen/kanye-quotes
 ```
 
 ### Configurations
